@@ -34,7 +34,17 @@ $ git diff# 显示暂存区和工作区的差异
 $ git diff HEAD# 显示两次提交之间的差异
 $ git reset --hard HEAD^# 回退到上一个版本
 $ git reset --hard HEAD^^# 回退到上上一个版本
+$ git reset --hard HEAD~100# 回退到100个版本
 $ git reflog# 获取历史版本号
 $ git fetch [remote]# 下载远程仓库的所有变动
 $ git remote -v# 显示所有远程仓库
-$ git push origin master#把该分支推送到远程库对应的远程分支上
+$ git push origin master
+#把该分支推送到远程库对应的远程分支上(第一次推送master分支时，git push -u origin master加上了 –u参数，Git会将本地的master分支内容推送的远程新的master分支，还会把2个master分支关联起来)
+$ git remote add origin https://github.com/zwg481026/APITest.git# 将你本地的仓库和github仓库进行关联
+
+
+
+
+
+
+#end
